@@ -49,7 +49,7 @@
         </div>
         <img
           class="career-img"
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d71db18bcf9.png"
+          src="https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png"
           alt="career"
         />
       </div>
@@ -69,7 +69,7 @@
           </a>
         </span>
         <img
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d6bc7ae72ae.png"
+          src="https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png"
           alt="male"
           class="male"
         />
@@ -86,7 +86,7 @@
         class="about-item like image"
         style="
           --color: #0c0e20;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd812567723.webp);
+          background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png);
         "
       >
         <div class="image-content">
@@ -101,7 +101,7 @@
         class="about-item like image"
         style="
           --color: #7b3c25;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd836099d16.webp);
+          background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png);
         "
       >
         <div class="image-content">
@@ -119,7 +119,7 @@
         class="about-item static image"
         style="
           --color: #0f1114;
-          background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661c8fbf226d3.webp);
+          background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png);
         "
       >
         <div class="image-content">
@@ -142,7 +142,7 @@
       <div class="about-item child">
         <div
           class="about-item map image"
-          style="background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661cbccc56af5.webp)"
+          style="background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png)"
         >
           <span class="position">我现在住在 <strong>中国，河南省</strong></span>
         </div>
