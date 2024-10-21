@@ -32,7 +32,7 @@
         <div class="nav-center">
           <div class="site-menu">
             <div v-for="(item, index) in theme.nav" :key="index" class="menu-item">
-              <span class="link-btn" @click="router.go(item.link)"> {{ item.text }}</span>
+              <span class="link-btn" @click="router.go(item.items[0].link)"> {{ item.text }}</span>
             </div>
           </div>
           <span class="site-title" @click="smoothScrolling">
