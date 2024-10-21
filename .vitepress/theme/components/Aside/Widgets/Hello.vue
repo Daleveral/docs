@@ -7,8 +7,10 @@
         <Clock />
       </div>
       <span class="site-desc">
-        这里有关于<strong>开发</strong>相关的问题和看法，也会有一些<strong>奇技淫巧</strong>的分享，其中大部分内容会侧重于<strong>前端开发</strong>。
-        希望你可以在这里找到对你有用的知识和教程。
+      <p>If I should meet thee</p>
+      <p>after long years</p>
+      <p>How should I greet thee</p>
+      <p>with silence and tears</p>
       </span>
     </div>
     <div class="info">
@@ -17,10 +19,10 @@
         <span class="desc">{{ theme.siteMeta.description }}</span>
       </div>
       <div class="link">
-        <a href="https://github.com/imsyy/" target="_blank" class="social-link">
+        <a href="https://github.com/Daleveral/" target="_blank" class="social-link">
           <i class="iconfont icon-github"></i>
         </a>
-        <a href="mailto:one@imsyy.top" target="_blank" class="social-link">
+        <a href="mailto:one@2448926122@qq.com" target="_blank" class="social-link">
           <i class="iconfont icon-email"></i>
         </a>
       </div>

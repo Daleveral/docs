@@ -3,7 +3,7 @@
   <div class="tags-cloud s-card">
     <div class="title">
       <i class="iconfont icon-hashtag"></i>
-      <span class="title-name">热门标签</span>
+      <span class="title-name">文章标签</span>
     </div>
     <div class="all-tags">
       <a
@@ -28,10 +28,10 @@ const { theme } = useData();
 .tags-cloud {
   .all-tags {
     position: relative;
-    display: flex;
+    display: contents;
     flex-direction: row;
     flex-wrap: wrap;
-    max-height: 500px;
+    max-height: 800px;
     overflow: hidden;
     .tags {
       display: inline-block;

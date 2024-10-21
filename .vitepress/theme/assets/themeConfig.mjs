@@ -155,7 +155,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "主站",
-          url: "/",
+          url: "https://www.dalechu.cn/",
         },
         {
           icon: "/images/logo/logo.webp",
