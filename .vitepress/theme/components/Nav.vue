@@ -32,18 +32,7 @@
         <div class="nav-center">
           <div class="site-menu">
             <div v-for="(item, index) in theme.nav" :key="index" class="menu-item">
-              <span class="link-btn"> {{ item.text }}</span>
-              <div v-if="item.items" class="link-child">
-                <span
-                  v-for="(child, childIndex) in item.items"
-                  :key="childIndex"
-                  class="link-child-btn"
-                  @click="router.go(child.link)"
-                >
-                  <i v-if="child.icon" :class="`iconfont icon-${child.icon}`" />
-                  {{ child.text }}
-                </span>
-              </div>
+              <span class="link-btn" @click="router.go(item.link)"> {{ item.text }}</span>
             </div>
           </div>
           <span class="site-title" @click="smoothScrolling">
@@ -116,6 +105,9 @@
         </div>
       </div>
     </nav>
+
+
+
     <!-- 移动端菜单 -->
     <MobileMenu />
     <!-- 全局搜索 -->
