@@ -24,7 +24,7 @@ const linkData = [
         name: "無名小栈",
         avatar: "https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png",
         desc: "分享技术与科技生活",
-        url: "https://blog.imsyy.top/",
+        url: "https://dalechu.cn/",
       },
     ],
   },

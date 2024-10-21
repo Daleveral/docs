@@ -5,7 +5,7 @@ export const themeConfig = {
     // 站点标题
     title: "Dale's Garden",
     // 站点描述
-    description: "Hello World",
+    description: "日落山水静, 为君起松声",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
@@ -111,15 +111,21 @@ export const themeConfig = {
   // 导航栏菜单
   nav: [
     {
+      text: "首页",
+      items: [
+        { text: "文章列表", link: "/", icon: "article" },
+      ],
+    },
+    {
       text: "归档",
       items: [
         { text: "文章列表", link: "/pages/archives", icon: "article" },
       ],
     },
     {
-       text: "专栏",
+       text: "零碎",
        items: [
-          { text: "技术分享", link: "/pages/categories/技术分享", icon: "technical" },
+          { text: "技术分享", link: "/pages/lifedots", icon: "technical" },
        ],
      },
     {
@@ -130,7 +136,7 @@ export const themeConfig = {
       ],
     },
     {
-      text: "我的",
+      text: "关于",
       items: [
         // { text: "畅所欲言", link: "/pages/message", icon: "chat" },
         // { text: "致谢名单", link: "/pages/thanks", icon: "reward" },
@@ -185,28 +191,28 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "mailto:one@imsyy.top",
+        link: "mailto:2448926122@qq.com",
       },
       {
         icon: "github",
-        link: "https://www.github.com/imsyy/",
+        link: "https://www.github.com/Daleveral/",
       },
-      {
-        icon: "telegram",
-        link: "https://t.me/bottom_user",
-      },
+      // {
+      //   icon: "telegram",
+      //   link: "https://t.me/bottom_user",
+      // },
       {
         icon: "bilibili",
-        link: "https://space.bilibili.com/98544142",
+        link: "https://space.bilibili.com/496029253",
       },
       {
         icon: "qq",
-        link: "https://res.abeim.cn/api/qq/?qq=1539250352",
+        link: "https://res.abeim.cn/api/qq/?qq=2448926122",
       },
-      {
-        icon: "twitter-x",
-        link: "https://twitter.com/iimmsyy",
-      },
+      // {
+      //   icon: "twitter-x",
+      //   link: "https://twitter.com/iimmsyy",
+      // },
     ],
     // sitemap
     sitemap: [
@@ -250,7 +256,7 @@ export const themeConfig = {
         items: [
           // { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
           { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },
-          { text: "站点订阅", link: "https://blog.imsyy.top/rss.xml", newTab: true },
+          { text: "站点订阅", link: "https://dalechu.cn/rss.xml", newTab: true },
           // {
           //   text: "反馈投诉",
           //   link: "https://eqnxweimkr5.feishu.cn/share/base/form/shrcnCXCPmxCKKJYI3RKUfefJre",
@@ -262,7 +268,7 @@ export const themeConfig = {
   },
   // 评论
   comment: {
-    enable: false,
+    enable: true,
     // 评论系统选择
     type: "artalk",
     // 评论系统配置
