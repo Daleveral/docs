@@ -3,27 +3,27 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Curve",
+    title: "Dale's Garden",
     // 站点描述
     description: "Hello World",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://blog.imsyy.top",
+    site: "https://profile.dalechu.cn",
     // 语言
     lang: "zh-CN",
     // 作者
     author: {
-      name: "Admin",
+      name: "Dale Chu",
       cover: "/images/logo/logo.webp",
-      email: "114514@gmail.com",
-      link: "https://www.imsyy.top",
+      email: "2448926122@qq.com",
+      link: "https://profile.dalechu.cn",
     },
   },
   // 备案信息
-  icp: "萌ICP备114514号",
+  // icp: "萌ICP备114514号",
   // 建站日期
-  since: "2020-07-28",
+  since: "2023-07-29",
   // 每页文章数据
   postSize: 8,
   // inject
