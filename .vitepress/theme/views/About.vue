@@ -4,15 +4,15 @@
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
       <!-- 介绍 -->
       <div class="about-item hello">
-        <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 無名</span>
-        <span class="text3">是一名 前端开发工程师、独立开发者、博主</span>
+        <span class="text1">你好 ~ 👋</span>
+        <span class="text2 title2">我是 Dale</span>
+        <span class="text3">是一个不断进步的年轻人</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
         <span class="tip">追求</span>
-        <span class="title2">源于</span>
-        <span class="title2">热爱而去开发</span>
+        <span class="title2">源于热爱</span>
+        <span class="title2">去寻找和开发</span>
         <span class="title2">优秀的作品</span>
       </div>
     </div>
@@ -39,80 +39,23 @@
       </div>
       <!-- 生涯 -->
       <div class="about-item career">
-        <span class="tip">生涯</span>
+        <span class="tip">追求</span>
         <span class="title2">
-          <i>無限進步</i>
+          <i>看看世界</i>
         </span>
         <div class="list">
-          <span class="list-item" style="--color: #357ef5">ZZRVTC · 计算机应用技术</span>
-          <span class="list-item" style="--color: #eb372a">FE · 前端开发工程师</span>
+          <span class="list-item" style="--color: #357ef5">Born in · 安徽 / 安庆</span>
+          <span class="list-item" style="--color: #eb372a">Now in · 北京 / 朝阳 </span>
         </div>
-        <img
+        <!-- <img
           class="career-img"
           src="https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png"
           alt="career"
-        />
+        /> -->
       </div>
     </div>
-    <div class="about-content" style="grid-template-columns: 3fr 2fr">
-      <!-- 性格 -->
-      <div class="about-item character" style="--color: #4298b4">
-        <span class="tip">性格</span>
-        <span class="title2">物流师</span>
-        <span class="title2" style="color: var(--color)">ISTJ-A / ISTJ-T</span>
-        <span class="more">
-          在
-          <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
-          了解更多关于
-          <a href="https://www.16personalities.com/ch/istj-%E4%BA%BA%E6%A0%BC" target="_blank">
-            物流师
-          </a>
-        </span>
-        <img
-          src="https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png"
-          alt="male"
-          class="male"
-        />
-      </div>
-      <!-- 座右铭 -->
-      <div class="about-item">
-        <span class="tip">座右铭</span>
-        <span class="title1" style="margin-top: 20px">脚踏实地，</span>
-        <span class="title2">一丝不苟。</span>
-      </div>
-    </div>
-    <div class="about-content" style="grid-template-columns: 1fr 1fr">
-      <div
-        class="about-item like image"
-        style="
-          --color: #0c0e20;
-          background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png);
-        "
-      >
-        <div class="image-content">
-          <span class="tip">关注偏好</span>
-          <span class="title2">数码科技</span>
-          <div class="image-desc">
-            <span class="left">手机、电脑及软硬件</span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="about-item like image"
-        style="
-          --color: #7b3c25;
-          background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png);
-        "
-      >
-        <div class="image-content">
-          <span class="tip">音乐偏好</span>
-          <span class="title2">欧美、华语流行、纯音乐、ACG</span>
-          <div class="image-desc">
-            <span class="left">一起欣赏更多音乐</span>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
       <!-- 数据 -->
       <div
@@ -123,8 +66,8 @@
         "
       >
         <div class="image-content">
-          <span class="tip">数据</span>
-          <span class="title2">访问统计</span>
+          <span class="tip">喜欢的球队</span>
+          <span class="title2">切尔西</span>
           <div class="static-data">
             <div v-for="(item, key, index) in statisticsData" :key="index" class="static-item">
               <span class="static-name">{{ key }}</span>
@@ -132,9 +75,6 @@
             </div>
           </div>
           <div class="image-desc opacity">
-            <span class="left">
-              统计信息来自 <a href="https://v6.51.la/" target="_blank">51la</a>
-            </span>
           </div>
         </div>
       </div>
@@ -144,16 +84,16 @@
           class="about-item map image"
           style="background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png)"
         >
-          <span class="position">我现在住在 <strong>中国，河南省</strong></span>
+          <span class="position">我喜欢 <strong>看书 / 徒步 / 足球 / 长跑 / 魔方</strong></span>
         </div>
         <div class="about-item info">
           <div class="info-item">
             <span class="info-name">生于</span>
-            <span class="info-num" style="--color: #43a6c6">2001</span>
+            <span class="info-num" style="--color: #43a6c6">2003</span>
           </div>
           <div class="info-item">
             <span class="info-name">现在职业</span>
-            <span class="info-num" style="--color: #dfac46">前端开发工程师</span>
+            <span class="info-num" style="--color: #dfac46">学生</span>
           </div>
         </div>
       </div>
