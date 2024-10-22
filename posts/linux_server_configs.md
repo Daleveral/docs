@@ -9,21 +9,24 @@ description: 沉重的影子像道路，穿过整个国土
 
 
 
-##### 更改主机名
+## 更改主机名
 ```shell
 hostnamectl set-hostname dales
 vim /etc/hosts # 127.0.0.1 后面的字符改成主机名
 # 重启
 ```
+<br/>
 
 
-##### 安装必要软件
+## 安装必要软件
 ```shell
 apt install git nginx neofetch zsh unzip
 ```
 
+<br/>
 
-##### zsh 配置
+
+## zsh 配置
 ```shell
 chsh -s /bin/zsh
 
@@ -49,8 +52,14 @@ plugins=(git
         )
 
 # 主题改为 sorin, af-magic, agnoster ...
-
-
-# 自定义快速函数 :
-
 ```
+
+<br/>
+
+## .zshrc 配置
+
+参考 [终端配置](/posts/terminal_configs)
+
+
+<br/>
+<br/>

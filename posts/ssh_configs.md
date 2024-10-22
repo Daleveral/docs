@@ -9,8 +9,8 @@ description: 乘风好去, 长空万里, 直下看山河. 斫去桂婆娑. 人�
 
 
 
-___
-#### 服务器端开启密钥登录模式
+
+## 服务器端开启密钥登录模式
 
 ```shell
 vim /etc/ssh/sshd_config
@@ -30,9 +30,10 @@ service sshd restart
 # 或 /bin/systemctl restart sshd.service
 ```
 
+<br/>
 
 
-#### 用户端创建自己的秘钥对
+## 用户端创建自己的秘钥对
 
 ```bash
 ssh-keygen -t rsa -b 2048 -f key_name
@@ -55,9 +56,9 @@ Host nickname # 连接服务器用自定义的 nickname 就行了
 type key_name.pub | ssh user_name@8.8.8.8 "cat >> ~/.ssh/authorized_keys"
 ```
 
+<br/>
 
-
-#### Git 配置
+## Git 配置
 
 ```shell
 # 编辑 ~/.ssh/config , 添加 :
@@ -72,3 +73,7 @@ git config --global https.proxy 'socks5://127.0.0.1:7891'
 
 git config --global --list  # 查看配置
 ```
+
+
+<br/>
+<br/>
