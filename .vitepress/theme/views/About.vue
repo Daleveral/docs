@@ -16,7 +16,7 @@
         <span class="title2">优秀的作品</span>
       </div>
     </div>
-    <div class="about-content" style="grid-template-columns: 2fr 3fr">
+    <div class="about-content" style="grid-template-columns: 1fr 1fr">
       <!-- 技能 -->
       <div class="about-item skills">
         <span class="tip">技能</span>
@@ -45,7 +45,11 @@
         </span>
         <div class="list">
           <span class="list-item" style="--color: #357ef5">Born in · 安徽 / 安庆</span>
-          <span class="list-item" style="--color: #eb372a">Now in · 北京 / 朝阳 </span>
+          <span class="list-item" style="--color: #eb372a">Now in  · 北京 / 朝阳 </span>
+          <span class="list-item" style="--color: #357ef5">I am a  · 南方人 </span>
+          <span class="list-item" style="--color: #eb372a">Prefer  · 北方生活  </span>
+          <span class="list-item" style="--color: #357ef5">Plan to · 西藏 / 新疆 / 川西</span>
+          <span class="list-item" style="--color: #eb372a">Slogan  · 多走一走, 看一看风景 </span>
         </div>
         <!-- <img
           class="career-img"
@@ -62,12 +66,12 @@
         class="about-item static image"
         style="
           --color: #0f1114;
-          background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png);
+          background-image: url(https://pic.imgdb.cn/item/6717cdc7d29ded1a8cbff7e6.jpg);
         "
       >
         <div class="image-content">
-          <span class="tip">喜欢的球队</span>
-          <span class="title2">切尔西</span>
+          <span class="tip">希望世界</span>
+          <span class="title2">多姿多彩</span>
           <div class="static-data">
             <div v-for="(item, key, index) in statisticsData" :key="index" class="static-item">
               <span class="static-name">{{ key }}</span>
@@ -92,9 +96,17 @@
             <span class="info-num" style="--color: #43a6c6">2003</span>
           </div>
           <div class="info-item">
-            <span class="info-name">现在职业</span>
+            <span class="info-name">职业</span>
             <span class="info-num" style="--color: #dfac46">学生</span>
           </div>
+          <div class="info-item">
+            <span class="info-name">专业</span>
+            <span class="info-num" style="--color: #d8b4fe">网络安全</span>
+          </div>
+          <!-- <div class="info-item">
+            <span class="info-name">理想</span>
+            <span class="info-num" style="--color: #448c63">走遍世界</span>
+          </div> -->
         </div>
       </div>
     </div>
