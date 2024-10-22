@@ -1,3 +1,14 @@
+---
+title: Obsidian 配置
+tags: [Obsidian]
+categories: [桌面软件]
+date: 2024-10-11
+description: 午梦千山, 窗阴一箭, 隔江人在雨声中, 晚风菰叶生秋怨
+
+---
+
+
+
 ##### 快捷键
 ___
 -  Ctrl + 数字 = 标题

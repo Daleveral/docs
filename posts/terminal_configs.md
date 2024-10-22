@@ -1,3 +1,14 @@
+---
+title: 终端配置
+tags: [Linux, Windows]
+categories: [服务器]
+date: 2024-10-11
+description: 桃李春风一杯酒, 江湖夜雨十年灯
+
+---
+
+
+
 ##### Windows
 ___
 -  终端 : Windows Terminal

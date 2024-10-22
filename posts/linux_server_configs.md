@@ -1,4 +1,13 @@
-___
+---
+title: Linux 新服务器配置
+tags: [Linux, 服务器]
+categories: [服务器]
+date: 2024-10-11
+description: 沉重的影子像道路，穿过整个国土
+
+---
+
+
 
 ##### 更改主机名
 ```shell
@@ -10,7 +19,7 @@ vim /etc/hosts # 127.0.0.1 后面的字符改成主机名
 
 ##### 安装必要软件
 ```shell
-yum install git nginx neofetch zsh unzip
+apt install git nginx neofetch zsh unzip
 ```
 
 
