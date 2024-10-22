@@ -137,7 +137,7 @@ export const copyText = async (data) => {
   if (navigator.clipboard) {
     try {
       await navigator.clipboard.writeText(data);
-      $message.success("复制成功，在转载时请标注本文地址");
+      // $message.success("复制成功，在转载时请标注本文地址");
     } catch (error) {
       console.error("复制出错：", error);
       $message.error("复制出现错误，请重试");

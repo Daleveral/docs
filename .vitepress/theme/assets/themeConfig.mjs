@@ -9,7 +9,7 @@ export const themeConfig = {
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://profile.dalechu.cn",
+    site: "https://docs.dalechu.cn",
     // 语言
     lang: "zh-CN",
     // 作者
@@ -154,36 +154,36 @@ export const themeConfig = {
       list: [
         {
           icon: "/images/logo/logo.webp",
-          name: "主站",
+          name: "博客",
           url: "https://www.dalechu.cn/",
         },
         {
           icon: "/images/logo/logo.webp",
-          name: "博客镜像站",
-          url: "https://blog-backup.imsyy.top/",
+          name: "导航站",
+          url: "https://start.dalechu.cn/",
         },
       ],
     },
-    {
-      name: "服务",
-      list: [
-        {
-          icon: "https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png",
-          name: "站点监测",
-          url: "https://status.imsyy.top/",
-        },
-      ],
-    },
-    {
-      name: "项目",
-      list: [
-        {
-          icon: "/images/logo/logo.webp",
-          name: "Curve",
-          url: "https://github.com/imsyy/vitepress-theme-curve",
-        }
-      ],
-    },
+    // {
+    //   name: "服务",
+    //   list: [
+    //     {
+    //       icon: "https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png",
+    //       name: "站点监测",
+    //       url: "https://status.imsyy.top/",
+    //     },
+    //   ],
+    // },
+    // {
+    //   name: "项目",
+    //   list: [
+    //     {
+    //       icon: "/images/logo/logo.webp",
+    //       name: "Curve",
+    //       url: "https://github.com/imsyy/vitepress-theme-curve",
+    //     }
+    //   ],
+    // },
   ],
   // 页脚信息
   footer: {
@@ -255,7 +255,7 @@ export const themeConfig = {
         text: "服务",
         items: [
           // { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
-          { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },
+          { text: "一个导航", link: "https://start.dalechu.cn", newTab: true },
           { text: "站点订阅", link: "https://dalechu.cn/rss.xml", newTab: true },
           // {
           //   text: "反馈投诉",
