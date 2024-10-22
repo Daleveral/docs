@@ -3,9 +3,9 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Dale's Garden",
+    title: "Dale's Docs",
     // 站点描述
-    description: "日落山水静, 为君起松声",
+    description: "书卷多情似故人, 晨昏忧乐每相亲",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
@@ -122,17 +122,17 @@ export const themeConfig = {
         { text: "文章列表", link: "/pages/archives", icon: "article" },
       ],
     },
-    {
-       text: "零碎",
-       items: [
-          { text: "技术分享", link: "/pages/lifedots", icon: "technical" },
-       ],
-     },
+    // {
+    //    text: "零碎",
+    //    items: [
+    //       { text: "技术分享", link: "/pages/lifedots", icon: "technical" },
+    //    ],
+    // },
     {
       text: "友链",
       items: [
-        { text: "友链鱼塘", link: "/pages/friends", icon: "fish" },
-        // { text: "友情链接", link: "/pages/link", icon: "people" },
+        // { text: "友链鱼塘", link: "/pages/friends", icon: "fish" },
+        { text: "友情链接", link: "/pages/link", icon: "people" },
       ],
     },
     {
@@ -160,7 +160,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "导航站",
-          url: "https://start.dalechu.cn/",
+          url: "https://profile.dalechu.cn/",
         },
       ],
     },

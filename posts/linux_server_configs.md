@@ -31,12 +31,14 @@ apt install git nginx neofetch zsh unzip
 chsh -s /bin/zsh
 
 # git 方式
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+cd ~/.oh-my-zsh/plugins/
+git clone https://github.com/zsh-users/zsh-autosuggestions.git 
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
 
 # gitee 方式
-git clone https://gitee.com/dale-chu/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
-git clone https://gitee.com/dale-chu/zsh-syntax-highlighting-master.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+cd ~/.oh-my-zsh/plugins/
+git clone https://gitee.com/dale-chu/zsh-autosuggestions.git 
+git clone https://gitee.com/dale-chu/zsh-syntax-highlighting-master.git 
 
 # git 本地再 scp 
 cd C:/Users/24489/Desktop/Temp/Linux-configs
