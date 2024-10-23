@@ -150,7 +150,7 @@ export const copyText = async (data) => {
     textArea.select();
     try {
       document.execCommand("copy");
-      $message.success("复制成功，在转载时请标注本文地址");
+      // $message.success("复制成功，在转载时请标注本文地址");
     } catch (err) {
       console.error("复制出错：", err);
       $message.error("复制出现错误，请重试");

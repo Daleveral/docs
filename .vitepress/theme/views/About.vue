@@ -48,7 +48,7 @@
           <span class="list-item" style="--color: #eb372a">Now in  · 北京 / 朝阳 </span>
           <span class="list-item" style="--color: #357ef5">I am a  · 南方人 </span>
           <span class="list-item" style="--color: #eb372a">Prefer  · 北方生活  </span>
-          <span class="list-item" style="--color: #357ef5">Plan to · 西藏 / 新疆 / 川西</span>
+          <span class="list-item" style="--color: #357ef5">Plan to · 川西 / 新疆 / 西藏</span>
           <span class="list-item" style="--color: #eb372a">Slogan  · 多走一走, 看一看风景 </span>
         </div>
         <!-- <img
@@ -494,7 +494,7 @@ onMounted(() => {
           width: 100%;
           padding: 20px 30px;
           color: #fff;
-          background-color: #636352;
+          background-color: #ecbaa246;
           font-size: 20px;
           transition: bottom 1s;
         }

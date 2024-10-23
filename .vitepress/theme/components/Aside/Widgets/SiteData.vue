@@ -27,6 +27,9 @@
         </span>
         <span class="num" id="busuanzi_value_site_pv">0</span>
       </div>
+      <div class="data-item"> 
+        <!-- Placeholder for future content 空行, 占位用 -->
+      </div>
     </div>
   </div>
 </template>
