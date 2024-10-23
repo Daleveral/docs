@@ -139,7 +139,7 @@
               class="btn right-menu-link"
               target="_blank"
             >
-              <i class="iconfont icon-google"></i>
+              <i class="iconfont icon-robot"></i>
               <span class="name">使用谷歌搜索</span>
             </a>
 
@@ -363,8 +363,8 @@ const rightMenuFunc = async (type) => {
         window.open(clickedTypeData.value?.href);
         break;
       case "copy-link": // 复制本页网址
-        // const pageLink = theme.siteMeta.site + router.route.path;
-        const pageLink = theme.siteMeta.site + route.path;
+        const pageLink = "https://docs.dalechu.cn/" + router.route.path;
+        // const pageLink = theme.siteMeta.site + route.path;
         if (pageLink) copyText(pageLink);
         break;
       case "input-paste":

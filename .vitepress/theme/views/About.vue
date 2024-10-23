@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1 class="title">关于本站</h1>
-    <div class="about-content" style="grid-template-columns: 3fr 2fr">
+    <div class="about-content" style="grid-template-columns: 1fr 1fr">
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好 ~ 👋</span>
