@@ -7,7 +7,7 @@ export const themeConfig = {
     // 站点描述
     description: "书卷多情似故人, 晨昏忧乐每相亲",
     // 站点logo
-    logo: "/images/logo/jump.gif",
+    logo: "/images/logo/ld.gif",
     // 站点地址
     site: "https://docs.dalechu.cn",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "Dale Chu",
-      cover: "/images/logo/jump.gif", // siteMeta.author.cover
+      cover: "/images/logo/avatar.webp", // siteMeta.author.cover
       email: "2448926122@qq.com",
       link: "https://dalechu.cn",
     },
