@@ -16,6 +16,7 @@
         <span class="title2">优秀的作品</span>
       </div>
     </div>
+
     <div class="about-content" style="grid-template-columns: 1fr 1fr">
       <!-- 技能 -->
       <div class="about-item skills">
@@ -37,40 +38,25 @@
           </a>
         </div>
       </div>
+      
       <!-- 生涯 -->
-      <div class="about-item career">
+      <div class="about-item skills">
         <span class="tip">致谢</span>
-        <span class="title2">
-          <i>基于开源与公益项目</i>
-        </span>
-        <div class="list">
-          <span class="list-item" style="--color: #357ef5">
-          框架 : <a href="https://vitepress.vuejs.org/" target="_blank" style="color: inherit; text-decoration: none;">VitePress</a>
-          </span>
-
-          <span class="list-item" style="--color: #eb372a">
-          主题 : <a href="https://blog.imsyy.top/posts/2024/0320" target="_blank" style="color: inherit; text-decoration: none;">Curve</a>, 
-                 <a href="https://github.com/zhheo/HeoWeb" target="_blank" style="color: inherit; text-decoration: none;">Heo</a>
-          </span>
-
-          <span class="list-item" style="--color: #eb372a">
-          托管 : <a href="https://vercel.com" target="_blank" style="color: inherit; text-decoration: none;">Vercel</a>
-          </span>
-
-          <span class="list-item" style="--color: #eb372a">
-          图床 : <a href="https://superbed.cn" target="_blank" style="color: inherit; text-decoration: none;">Superbed</a>
-          </span>
-
-          <span class="list-item" style="--color: #eb372a">还有很多项目, 一并致谢 ~  </span>
-          <!-- <span class="list-item" style="--color: #357ef5">Plan to · 川西 / 新疆 / 西藏</span>
-          <span class="list-item" style="--color: #eb372a">Slogan  · 多走一走, 看一看风景 </span> -->
+        <span class="title2">基于开源和公益项目</span>
+        <div class="skills-list">
+          <a
+            v-for="(item, index) in ThanksList"
+            :key="index"
+            :style="{ '--color': item.color }"
+            :href="item.link"
+            class="skills-item"
+            target="_blank"
+          >
+            <span class="skills-name">{{ item.name }}</span>
+          </a>
         </div>
-        <!-- <img
-          class="career-img"
-          src="https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png"
-          alt="career"
-        /> -->
       </div>
+
     </div>
 
 
@@ -217,6 +203,45 @@ const skillsData = [
     link: "https://chat.openai.com/",
   },
 ];
+
+
+
+// 技能数据
+const ThanksList = [
+  {
+    name: "VitePress",
+    color: "#f1e05abd",
+    link: "https://vitepress.dev/",
+  },
+  {
+    name: "Curve 主题",
+    color: "#e34f26",
+    link: "https://blog.imsyy.top/posts/2024/0320",
+  },
+  {
+    name: "Heo 主题",
+    color: "#563d7c",
+    link: "https://github.com/zhheo/HeoWeb",
+  },
+  {
+    name: "Vercel",
+    color: "#41b883",
+    link: "https://vercel.com/",
+  },
+  {
+    name: "Node.js",
+    color: "#026E00",
+    link: "https://nodejs.org/",
+  },
+  {
+    name: "Superbed",
+    color: "#149ECA",
+    link: "https://superbed.cn/",
+  },
+];
+
+
+
 
 // 站点统计数据
 const statisticsData = ref(null);

@@ -363,7 +363,7 @@ const rightMenuFunc = async (type) => {
         window.open(clickedTypeData.value?.href);
         break;
       case "copy-link": // 复制本页网址
-        const pageLink = "https://docs.dalechu.cn/" + router.route.path;
+        const pageLink = "https://docs.dalechu.cn" + router.route.path;
         // const pageLink = theme.siteMeta.site + route.path;
         if (pageLink) copyText(pageLink);
         break;

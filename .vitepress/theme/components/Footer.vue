@@ -17,7 +17,7 @@
           <span class="name">VitePress</span>
         </a>
         <a class="theme link" href="https://github.com/imsyy/vitepress-theme-curve" target="_blank">
-          <i class="iconfont icon-star" />
+          <!-- <i class="iconfont icon-star" /> -->
           <span class="name">Curve 主题 </span>
         </a>
         <a class="rss link" href="https://docs.dalechu.cn/rss.xml" target="_blank">
