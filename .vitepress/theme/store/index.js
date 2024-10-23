@@ -102,7 +102,7 @@ export const mainStore = defineStore("main", {
             ? "浅色模式"
             : this.themeType === "dark"
               ? "深色模式"
-              : "跟随系统";
+              : "明暗跟随系统";
         $message.info("当前主题为" + text, {
           duration: 1500,
         });

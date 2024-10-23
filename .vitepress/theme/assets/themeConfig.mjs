@@ -346,9 +346,9 @@ export const themeConfig = {
   rewardData: {
     enable: true,
     // 微信二维码
-    wechat: "https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png",
+    wechat: "https://picscdn.dalechu.cn/wx_ds.pngg",
     // 支付宝二维码
-    alipay: "https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png",
+    alipay: "https://picscdn.dalechu.cn/zfb_ds.png",
   },
   // 图片灯箱
   fancybox: {

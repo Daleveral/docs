@@ -217,7 +217,7 @@ export const getGreetings = () => {
   const hour = new Date().getHours();
   let hello;
   if (hour < 6) {
-    hello = "凌晨好，昨晚睡得怎么样？";
+    hello = "早上好，现在还很早噢 ~";
   } else if (hour < 9) {
     hello = "早上好，今天也要开心哦！";
   } else if (hour < 12) {
@@ -227,11 +227,11 @@ export const getGreetings = () => {
   } else if (hour < 17) {
     hello = "下午好，继续加油！";
   } else if (hour < 19) {
-    hello = "傍晚好，是时候放松一下了！";
+    hello = "傍晚了，该放松一下了！";
   } else if (hour < 22) {
     hello = "晚上好，是时候休息了！";
   } else {
-    hello = "夜深了，明天继续加油！";
+    hello = "夜深了，明天再加油吧！";
   }
   return hello;
 };
@@ -250,9 +250,7 @@ export const shuffleArray = (array) => {
 export const specialDayGray = () => {
   const specialDays = [
     { date: "4-4", name: "清明节" },
-    { date: "5-12", name: "汶川大地震纪念日" },
-    { date: "7-7", name: "中国人民抗日战争纪念日" },
-    { date: "9-18", name: "九·一八事变纪念日" },
+    { date: "9-18", name: "九·一八国耻日" },
     { date: "12-13", name: "南京大屠杀死难者国家公祭日" },
   ];
   // 获取当天日期

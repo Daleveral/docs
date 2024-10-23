@@ -4,7 +4,7 @@
     <div v-if="showBar" class="footer-bar">
       <span class="site-title">{{ site.title }}</span>
       <span class="site-desc">{{ site.description }}</span>
-      <a href="/" class="to-home">了解更多</a>
+      <a href="/" class="to-home">回到首页</a>
     </div>
     <div class="footer-social">
       <a

@@ -7,10 +7,10 @@ import dayjs from "dayjs";
 export const getTimeRemaining = () => {
   const now = dayjs();
   const dayText = {
-    day: "今日",
+    day: "今天",
     week: "本周",
     month: "本月",
-    year: "本年",
+    year: "今年",
   };
   /**
    * 计算时间差的函数

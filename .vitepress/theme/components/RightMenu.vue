@@ -65,7 +65,7 @@
               "
             >
               <i class="iconfont icon-link"></i>
-              <span class="name">复制链接地址</span>
+              <span class="name">复制链接</span>
             </div>
             <!-- 图片类型 -->
             <div
@@ -94,7 +94,7 @@
               <span class="name">粘贴文本</span>
             </div>
             <!-- 选中文本 -->
-            <a
+            <!-- <a
               v-if="(clickedType === 'text' || clickedType === 'input') && isLink(clickedTypeData)"
               :href="`${isLink(clickedTypeData)}`"
               class="btn right-menu-link"
@@ -102,7 +102,7 @@
             >
               <i class="iconfont icon-link"></i>
               <span class="name">新标签页打开</span>
-            </a>
+            </a> -->
 
             <div
               v-if="clickedType === 'text' || clickedType === 'input'"
@@ -122,14 +122,25 @@
               <i class="iconfont icon-baidu"></i>
               <span class="name">使用百度搜索</span>
             </a>
+
             <a
               v-if="clickedType === 'text' || clickedType === 'input'"
-              :href="`https://cn.bing.com/search?q=${encodeURIComponent(clickedTypeData)}`"
+              :href="`https://bing.com/search?q=${encodeURIComponent(clickedTypeData)}`"
               class="btn right-menu-link"
               target="_blank"
             >
               <i class="iconfont icon-bing"></i>
               <span class="name">使用必应搜索</span>
+            </a>
+
+            <a
+              v-if="clickedType === 'text' || clickedType === 'input'"
+              :href="`https://www.google.com/search?q=${encodeURIComponent(clickedTypeData)}`"
+              class="btn right-menu-link"
+              target="_blank"
+            >
+              <i class="iconfont icon-google"></i>
+              <span class="name">使用谷歌搜索</span>
             </a>
 
             <!-- <div
@@ -159,7 +170,7 @@
             <!-- 复制地址 -->
             <div class="btn" @click="rightMenuFunc('copy-link')">
               <i class="iconfont icon-copy"></i>
-              <span class="name">复制本页地址</span>
+              <span class="name">复制本页网址</span>
             </div>
             <!-- 明暗模式 -->
             <div class="btn" @click.stop="store.changeThemeType">
@@ -168,7 +179,7 @@
               />
               <span class="name">
                 {{
-                  themeType === "auto" ? "深色模式" : themeType === "dark" ? "浅色模式" : "跟随系统"
+                  themeType === "auto" ? "深色模式" : themeType === "dark" ? "浅色模式" : "明暗跟随系统"
                 }}
               </span>
             </div>

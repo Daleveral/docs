@@ -30,7 +30,7 @@
         </a>
       </div>
     </div>
-    <span class="meta-tip">署名-非商业性使用-相同方式共享 4.0 国际</span>
+    <!-- <span class="meta-tip">本文采用 CC BY-NC-SA 4.0 许可协议，转载请注明出处</span> -->
   </div>
 </template>
 
