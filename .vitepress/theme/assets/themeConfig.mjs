@@ -7,7 +7,7 @@ export const themeConfig = {
     // 站点描述
     description: "书卷多情似故人, 晨昏忧乐每相亲",
     // 站点logo
-    logo: "/images/logo/logo.webp",
+    logo: "/images/logo/avatar.webp",
     // 站点地址
     site: "https://docs.dalechu.cn",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "Dale Chu",
-      cover: "/images/logo/logo.webp",
+      cover: "/images/logo/avatar.webp",
       email: "2448926122@qq.com",
       link: "https://dalechu.cn",
     },
@@ -153,37 +153,46 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/logo.webp",
-          name: "博客",
+          icon: "/images/logo/avatar.webp",
+          name: "源站",
           url: "https://www.dalechu.cn/",
         },
         {
-          icon: "/images/logo/logo.webp",
-          name: "导航站",
-          url: "https://profile.dalechu.cn/",
+          icon: "/images/logo/vercel.webp",
+          name: "Vercel 站",
+          url: "https://www.epicurus.fun/",
         },
       ],
     },
+
+    {
+      name: "小游戏",
+      list: [
+        {
+          icon: "/images/logo/chidour.png",
+          name: "吃豆人",
+          url: "https://pacman.dalechu.cn/",
+        },
+        {
+          icon: "/images/logo/cube.png",
+          name: "3D-Tetris",
+          url: "https://tetris.dalechu.cn",
+        }
+      ],
+    },
     // {
-    //   name: "服务",
-    //   list: [
-    //     {
-    //       icon: "https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png",
-    //       name: "站点监测",
-    //       url: "https://status.imsyy.top/",
-    //     },
-    //   ],
-    // },
-    // {
-    //   name: "项目",
+    //   name: "工具",
     //   list: [
     //     {
     //       icon: "/images/logo/logo.webp",
-    //       name: "Curve",
-    //       url: "https://github.com/imsyy/vitepress-theme-curve",
+    //       name: "Alist",
+    //       url: "https://alist.dalechu.cn",
     //     }
     //   ],
     // },
+
+
+
   ],
   // 页脚信息
   footer: {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>安全中心 | 無名小栈</title>
+    <title>安全中心 | Dale's Docs</title>
     <style>
       * {
         margin: 0;
@@ -150,15 +150,15 @@
   <body>
     <header>
       <div class="logo">
-        <img src="./images/logo/logo.webp" alt="" />
+        <img src="./images/logo/avatar.webp" alt="" />
       </div>
       <div class="title">
-        <span class="site-name">無名小栈</span>
+        <span class="site-name">Dale's Docs</span>
         <span class="site-tip">安全中心</span>
       </div>
     </header>
     <main>
-      <span class="tip">您即将离开無名小栈，前往</span>
+      <span class="tip">您即将离开 Dale's Docs, 前往</span>
       <span id="url"></span>
       <div id="jump-content" class="warn">
         <span id="site-info">⚠️ 该网址安全性未知，请注意您的帐号和财产安全</span>
@@ -171,9 +171,9 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        無名小栈
+        Dale's Docs
       </a>
-      <a class="icp" href="https://beian.miit.gov.cn/" target="_blank"> 豫ICP备2022018134号-1 </a>
+      <a class="icp" href="https://beian.miit.gov.cn/" target="_blank"> ~ </a>
     </footer>
     <script>
       // 跳转网址
@@ -206,7 +206,7 @@
       };
       // 自动跳转
       const autoJump = () => {
-        let count = 3;
+        let count = 1;
         const updateContent = () => {
           jumpButton.innerHTML = `${count} 秒后自动跳转`;
           count--;
@@ -216,9 +216,9 @@
             window.location.replace(jumpLink);
           }
         };
-        // 每秒更新一次
+        // 每 500 ms秒更新一次
         updateContent();
-        interval = setInterval(updateContent, 1000);
+        interval = setInterval(updateContent, 500);
       };
       // 获取跳转网址
       const getJumpUrl = () => {

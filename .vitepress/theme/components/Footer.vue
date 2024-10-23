@@ -2,7 +2,7 @@
   <footer id="main-footer" class="main-footer">
     <div class="footer-content">
       <div class="copyright">
-        <span class="time">@ 2023 - {{ thisYear }} By </span>
+        <span class="time">@ 2023 - {{ thisYear }} &nbsp;&nbsp;By</span>
         <a :href="theme.siteMeta.author.link" class="author link" target="_blank">
           {{ theme.siteMeta.author.name }}
         </a>
@@ -17,11 +17,11 @@
           <span class="name">VitePress</span>
         </a>
         <a class="theme link" href="https://github.com/imsyy/vitepress-theme-curve" target="_blank">
-          <span class="name">主题</span>
+          <span class="name">Curve 主题 </span>
         </a>
         <a class="rss link" href="https://docs.dalechu.cn/rss.xml" target="_blank">
           <i class="iconfont icon-rss" />
-          <span class="name">订阅</span>
+          <span class="name">RSS 订阅</span>
         </a>
         <a
           class="cc link"
