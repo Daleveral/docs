@@ -39,15 +39,29 @@
       </div>
       <!-- 生涯 -->
       <div class="about-item career">
-        <span class="tip">追求</span>
+        <span class="tip">致谢</span>
         <span class="title2">
-          <i>看看世界</i>
+          <i>基于开源与公益项目</i>
         </span>
         <div class="list">
-          <span class="list-item" style="--color: #357ef5">Born in · 安徽 / 安庆</span>
-          <span class="list-item" style="--color: #eb372a">Now in  · 北京 / 朝阳 </span>
-          <span class="list-item" style="--color: #357ef5">I am a  · 南方人 </span>
-          <span class="list-item" style="--color: #eb372a">Prefer  · 北方生活  </span>
+          <span class="list-item" style="--color: #357ef5">
+          框架 : <a href="https://vitepress.vuejs.org/" target="_blank" style="color: inherit; text-decoration: none;">VitePress</a>
+          </span>
+
+          <span class="list-item" style="--color: #eb372a">
+          主题 : <a href="https://blog.imsyy.top/posts/2024/0320" target="_blank" style="color: inherit; text-decoration: none;">Curve</a>, 
+                 <a href="https://github.com/zhheo/HeoWeb" target="_blank" style="color: inherit; text-decoration: none;">Heo</a>
+          </span>
+
+          <span class="list-item" style="--color: #eb372a">
+          托管 : <a href="https://vercel.com" target="_blank" style="color: inherit; text-decoration: none;">Vercel</a>
+          </span>
+
+          <span class="list-item" style="--color: #eb372a">
+          图床 : <a href="https://superbed.cn" target="_blank" style="color: inherit; text-decoration: none;">Superbed</a>
+          </span>
+
+          <span class="list-item" style="--color: #eb372a">还有很多项目, 一并致谢 ~  </span>
           <!-- <span class="list-item" style="--color: #357ef5">Plan to · 川西 / 新疆 / 西藏</span>
           <span class="list-item" style="--color: #eb372a">Slogan  · 多走一走, 看一看风景 </span> -->
         </div>
@@ -88,7 +102,7 @@
           class="about-item map image"
           style="background-image: url(https://pic.imgdb.cn/item/653a8388c458853aefefcc58.png)"
         >
-          <span class="position">我喜欢 <strong>看书 / 徒步 / 足球 / 长跑 / 魔方</strong></span>
+          <span class="position">我喜欢 <strong>看书 / 徒步 / 足球 / 长跑 / 魔方 ~</strong></span>
         </div>
         <div class="about-item info">
           <div class="info-item">
@@ -101,7 +115,7 @@
           </div>
           <div class="info-item">
             <span class="info-name">专业</span>
-            <span class="info-num" style="--color: #d8b4fe">网络安全</span>
+            <span class="info-num" style="--color: #d8b4fe">网安</span>
           </div>
           <!-- <div class="info-item">
             <span class="info-name">理想</span>

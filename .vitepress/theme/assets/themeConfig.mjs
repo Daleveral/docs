@@ -91,7 +91,7 @@ export const themeConfig = {
         {
           crossorigin: "anonymous",
           rel: "stylesheet",
-          href: "http://at.alicdn.com/t/c/font_4721183_o9x8xywoks.csss",
+          href: "http://at.alicdn.com/t/c/font_4721183_o9x8xywoks.css",
         },
       ],
 

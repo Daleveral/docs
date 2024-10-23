@@ -362,8 +362,9 @@ const rightMenuFunc = async (type) => {
       case "open-link":
         window.open(clickedTypeData.value?.href);
         break;
-      case "copy-link":
-        const pageLink = theme.siteMeta.site + router.route.path;
+      case "copy-link": // 复制本页网址
+        // const pageLink = theme.siteMeta.site + router.route.path;
+        const pageLink = theme.siteMeta.site + route.path;
         if (pageLink) copyText(pageLink);
         break;
       case "input-paste":
