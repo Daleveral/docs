@@ -34,7 +34,7 @@
             <div class="skills-logo">
               <i :class="`iconfont icon-${item.icon}`"></i>
             </div>
-            <span class="skills-name">{{ item.name }}</span>
+            <span class="skills-name" style="color: blue">{{ item.name }}</span>
           </a>
         </div>
       </div>

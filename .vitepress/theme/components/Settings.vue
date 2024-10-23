@@ -94,24 +94,49 @@
             </span>
           </div>
         </div>
+
         <span class="title">杂项调整</span>
+
         <div class="set-item">
           <span class="set-label">额外信息显示位置</span>
+
           <div class="set-options">
-            <span
+            <!-- <span
               :class="['options', { choose: infoPosition === 'normal' }]"
               @click="infoPosition = 'normal'"
             >
               默认位置
-            </span>
-            <span
+            </span> -->
+
+            <!-- <span
+              :class="['options', { choose: infoPosition === 'normal' }]"
+              @click="store.changeThemeType"
+            >
+              明暗模式
+            </span> -->
+
+            <!-- <span
               :class="['options', { choose: infoPosition === 'fixed' }]"
               @click="infoPosition = 'fixed'"
             >
               右下角
-            </span>
+            </span> -->
+
+            <div class="btn" @click.stop="store.changeThemeType">
+              <i
+                :class="`iconfont icon-${themeType === 'auto' ? 'dark' : themeType === 'dark' ? 'light' : 'auto'}`"
+              />
+              <span class="name">
+                {{
+                  themeType === "auto" ? "深色模式" : themeType === "dark" ? "浅色模式" : "明暗跟随系统"
+                }}
+              </span>
+            </div>
           </div>
+          </div>
+          
         </div>
+
       </div>
     </Modal>
   </div>
