@@ -294,7 +294,7 @@ export const themeConfig = {
     // 评论系统配置
     artalk: {
       site: "Dale's Docs",
-      server: "artalk.dalechu.cn",
+      server: "https://artalk.dalechu.cn",
     },
   },
   // 侧边栏
