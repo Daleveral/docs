@@ -9,7 +9,7 @@ export const themeConfig = {
     // 站点logo
     logo: "/images/logo/ld.gif",
     // 站点地址
-    site: "https://docs.dalechu.cn",
+    site: "https://docs.dalechu.cn/",
     // 语言
     lang: "zh-CN",
     // 作者
@@ -77,7 +77,7 @@ export const themeConfig = {
           href: "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.css",
         },
       ],
-      // iconfont
+      // iconfont 阿里巴巴矢量图标库
       [
         "link",
         {
@@ -86,6 +86,17 @@ export const themeConfig = {
           href: "https://cdn2.codesign.qq.com/icons/g5ZpEgx3z4VO6j2/latest/iconfont.css",
         },
       ],
+      [
+        "link",
+        {
+          crossorigin: "anonymous",
+          rel: "stylesheet",
+          href: "http://at.alicdn.com/t/c/font_4721183_o9x8xywoks.csss",
+        },
+      ],
+
+
+
       // Embed code
       ["link", { rel: "preconnect", href: "https://use.sevencdn.com" }],
       ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],
@@ -155,7 +166,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/emoji.png",
           name: "源站",
-          url: "https://www.dalechu.cn/",
+          url: "https://www.dalechu.cn",
         },
         {
           icon: "/images/logo/vercel.webp",
@@ -346,7 +357,7 @@ export const themeConfig = {
   rewardData: {
     enable: true,
     // 微信二维码
-    wechat: "https://picscdn.dalechu.cn/wx_ds.pngg",
+    wechat: "https://picscdn.dalechu.cn/wx_ds.png",
     // 支付宝二维码
     alipay: "https://picscdn.dalechu.cn/zfb_ds.png",
   },
