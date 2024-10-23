@@ -266,7 +266,7 @@ export const themeConfig = {
         text: "部署",
         items: [
           { text: "项目仓库", link: "https://github.com/Daleveral/docs", newTab: true },
-          { text: "关于本站", link: "/pages/about" },
+          { text: "文章创作", link: "https://blog.imsyy.top/posts/2024/0307" },
           // { text: "隐私政策", link: "/pages/privacy" },
           // { text: "版权协议", link: "/pages/cc" },
         ],

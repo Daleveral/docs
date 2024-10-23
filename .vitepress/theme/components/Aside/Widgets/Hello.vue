@@ -16,7 +16,7 @@
     <div class="info">
       <div class="name">
         <span class="author">{{ theme.siteMeta.author.name }}</span>
-        <span class="desc">{{ theme.siteMeta.description }}</span>
+        <span class="desc"> ~ Re So So Si Do Si La ~</span>
       </div>
       <div class="link">
         <a href="https://github.com/Daleveral/" target="_blank" class="social-link">
