@@ -1,5 +1,5 @@
 ---
-title: VitePress 服务器 Nginx 部署
+title: 服务器部署 VitePress
 tags: [Linux, 建站]
 categories: [服务器]
 date: 2024-10-24
@@ -9,20 +9,31 @@ description: 鸢飞戾天，鱼跃于渊. 岂弟君子，遐不作人
 
 <br/>
 
+## 基本环境
+
+- node.js v18 及以上版本
+- pnpm ( 可选, 以下基于 pnpm )
+
+<br/>
+
+```shell
+pnpm add -D vitepress
+```
+
+<br/>
+
 
 ## 静态文件生成
 
 ```shell
-git clone https://github.com/Daleveral/docs.git
-```
+git clone https://github.com/Daleveral/docs.git  
 
-```shell
 pnpm install
-```
 
-```shell
 pnpm build  # alias pb in my ~/.zshrc
 ```
+
+等待 **~/docs/.vitepress/** 下生成存储静态网页的目录 **/dist**
 
 ```shell
 cp -r ~/docs/.vitepress/dist/* /usr/share/nginx/html/dist
@@ -34,8 +45,7 @@ cp -r ~/docs/.vitepress/dist/* /usr/share/nginx/html/dist
 ```shell
     server # notes  -->  https
     {
-        listen       80;
-        #指定二级域名
+        listen 80;
         server_name notes.dalechu.cn;
         return 301 https://$server_name$request_uri;
     }
@@ -76,3 +86,13 @@ cp -r ~/docs/.vitepress/dist/* /usr/share/nginx/html/dist
         }
     }
 ```
+
+<br/>
+
+```shell
+nginx -t
+nginx -s reload
+```
+
+<br/>
+<br/>
