@@ -57,7 +57,7 @@ const changeHello = () => {
     helloText.value = "怎么还点？";
   } else if (helloClick.value === 3) {
     helloText.value = "那你点吧！";
-  } else if (helloClick.value === 100) {
+  } else if (helloClick.value === 20) {
     helloText.value = "怎么还在点？？？";
   } else {
     helloText.value = `x ${helloClick.value - 3}`;

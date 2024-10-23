@@ -15,7 +15,7 @@
       @modal-close="rewardShow = false"
     >
       <div class="reward-card">
-        <span class="thank">🙏 感谢您赐予我前进的力量</span>
+        <span class="thank">🙏 谢谢您的支持</span>
         <div class="qr">
           <a v-if="rewardData?.wechat" :href="rewardData.wechat" class="qr-img" target="_blank">
             <img v-if="rewardData?.wechat" :src="rewardData.wechat" alt="微信" />
@@ -32,10 +32,10 @@
             </span>
           </a>
         </div>
-        <div v-if="showJump" class="all-list s-card hover" @click="toRewardList">
-          <span class="title">赞赏名单 </span>
+        <div v-if="showJump" class="all-list s-card hover">
+          <span class="title">十分感谢 </span>
           <span class="tip">
-            赞赏金额将全部用于开源项目维护，以及服务器、域名及各类云服务的开销
+            赞赏金额可用于服务器、域名及各类云服务的开销.<br />祝您生活愉快，天天开心！
           </span>
         </div>
       </div>

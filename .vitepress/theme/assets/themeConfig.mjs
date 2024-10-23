@@ -124,7 +124,7 @@ export const themeConfig = {
     {
       text: "首页",
       items: [
-        { text: "文章列表", link: "/", icon: "article" },
+        { text: "网站首页", link: "/", icon: "article" },
       ],
     },
     {
@@ -266,7 +266,7 @@ export const themeConfig = {
         text: "部署",
         items: [
           { text: "项目仓库", link: "https://github.com/Daleveral/docs", newTab: true },
-          { text: "文章创作", link: "https://blog.imsyy.top/posts/2024/0307" },
+          { text: "文章创作", link: "https://blog.imsyy.top/posts/2024/0307", newTab: true },
           // { text: "隐私政策", link: "/pages/privacy" },
           // { text: "版权协议", link: "/pages/cc" },
         ],
@@ -293,8 +293,8 @@ export const themeConfig = {
     type: "artalk",
     // 评论系统配置
     artalk: {
-      site: "",
-      server: "",
+      site: "Dale's Docs",
+      server: "artalk.dalechu.cn",
     },
   },
   // 侧边栏
