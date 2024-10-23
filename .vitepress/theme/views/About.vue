@@ -6,7 +6,7 @@
       <div class="about-item hello">
         <span class="text1">你好 ~ 👋</span>
         <span class="text2 title2">我是 Dale</span>
-        <span class="text3">是一个不断进步的年轻人</span>
+        <span class="text3">这里存放这我的很多笔记, 其中内容都是悉心整理的, 希望能帮助到你 ~</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
@@ -48,8 +48,8 @@
           <span class="list-item" style="--color: #eb372a">Now in  · 北京 / 朝阳 </span>
           <span class="list-item" style="--color: #357ef5">I am a  · 南方人 </span>
           <span class="list-item" style="--color: #eb372a">Prefer  · 北方生活  </span>
-          <span class="list-item" style="--color: #357ef5">Plan to · 川西 / 新疆 / 西藏</span>
-          <span class="list-item" style="--color: #eb372a">Slogan  · 多走一走, 看一看风景 </span>
+          <!-- <span class="list-item" style="--color: #357ef5">Plan to · 川西 / 新疆 / 西藏</span>
+          <span class="list-item" style="--color: #eb372a">Slogan  · 多走一走, 看一看风景 </span> -->
         </div>
         <!-- <img
           class="career-img"

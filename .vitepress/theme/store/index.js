@@ -24,12 +24,12 @@ export const mainStore = defineStore("main", {
       // 中控台显示
       controlShow: false,
       // 搜索框显示
-      searchShow: false,
+      searchShow: true,
       // 个性化配置显示
       showSeetings: false,
       // 播放器数据
       playState: false,
-      playerShow: true,
+      playerShow: false,
       playerVolume: 0.7,
       playerData: {
         name: "未知曲目",
