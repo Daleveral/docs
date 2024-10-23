@@ -101,8 +101,18 @@
               target="_blank"
             >
               <i class="iconfont icon-link"></i>
-              <span class="name">在新标签页打开</span>
+              <span class="name">新标签页打开</span>
             </a>
+
+            <div
+              v-if="clickedType === 'text' || clickedType === 'input'"
+              class="btn"
+              @click="copyText(clickedTypeData)"
+            >
+              <i class="iconfont icon-copy"></i>
+              <span class="name">复制选中内容</span>
+            </div>
+
             <a
               v-if="clickedType === 'text' || clickedType === 'input'"
               :href="`https://www.baidu.com/s?wd=${encodeURIComponent(clickedTypeData)}`"
@@ -121,36 +131,30 @@
               <i class="iconfont icon-bing"></i>
               <span class="name">使用必应搜索</span>
             </a>
-            <div
-              v-if="clickedType === 'text' || clickedType === 'input'"
-              class="btn"
-              @click="copyText(clickedTypeData)"
-            >
-              <i class="iconfont icon-copy"></i>
-              <span class="name">复制选中文本</span>
-            </div>
-            <div
+
+            <!-- <div
               v-if="clickedType === 'text' && !commentCopyShow"
               class="btn"
               @click="commentCopy(clickedTypeData)"
             >
               <i class="iconfont icon-chat"></i>
               <span class="name">评论选中内容</span>
-            </div>
+            </div> -->
           </div>
           <!-- 通用菜单 -->
-          <div class="all-menu general">
-            <!-- 版权协议 -->
-            <!-- <div class="btn" @click="router.go('/pages/cc')">
+          <!-- <div class="all-menu general">
+            
+            <div class="btn" @click="router.go('/pages/cc')">
               <i class="iconfont icon-accessible"></i>
               <span class="name">版权协议</span>
-            </div> -->
-            <!-- 隐私政策 -->
-            <!-- <div class="btn" @click="router.go('/pages/privacy')">
+            </div>
+            
+            <div class="btn" @click="router.go('/pages/privacy')">
               <i class="iconfont icon-privacy"></i>
               <span class="name">隐私政策</span>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
+
           <div class="all-menu general">
             <!-- 复制地址 -->
             <div class="btn" @click="rightMenuFunc('copy-link')">
@@ -169,8 +173,9 @@
               </span>
             </div>
           </div>
+
           <!-- 播放器控制 -->
-          <div v-if="playerShow" class="all-menu general player">
+          <!-- <div v-if="playerShow" class="all-menu general player">
             <div class="data">
               <span class="name">{{ playerData.name }}</span>
               <span class="artist">{{ playerData.artist }}</span>
@@ -200,7 +205,7 @@
                 <i class="iconfont icon-next"></i>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </Transition>
@@ -438,7 +443,7 @@ defineExpose({ openRightMenu });
   transition: opacity 0.2s;
   .menu-content {
     position: absolute;
-    width: 180px;
+    width: 200px;
     background-color: var(--main-card-background);
     animation: fade-up 0.2s forwards;
     transition:
