@@ -14,11 +14,8 @@ description: 向河梁, 回头万里, 故人长绝. 易水萧萧西风冷, 满�
 :::
 <br/>
 
-::: info Decentralized
-核心理念 : 去中心化
-:::
+<p align="center"><font color=red>核心理念 : 去中心化 ( Decentralized )</font></p>
 
-<br/>
 <br/>
 
 
