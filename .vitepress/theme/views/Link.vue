@@ -150,7 +150,7 @@ const randomJump = () => {
         }
       }
     }
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
       min-height: auto;
       .menu,
       .link-group {

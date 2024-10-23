@@ -98,7 +98,7 @@
         <span class="title">杂项调整</span>
 
         <div class="set-item">
-          <span class="set-label">额外信息显示位置</span>
+          <span class="set-label">明暗模式切换</span>
 
           <div class="set-options">
             <!-- <span
@@ -108,12 +108,6 @@
               默认位置
             </span> -->
 
-            <!-- <span
-              :class="['options', { choose: infoPosition === 'normal' }]"
-              @click="store.changeThemeType"
-            >
-              明暗模式
-            </span> -->
 
             <!-- <span
               :class="['options', { choose: infoPosition === 'fixed' }]"
@@ -122,7 +116,7 @@
               右下角
             </span> -->
 
-            <div class="btn" @click.stop="store.changeThemeType">
+            <div class="options" @click.stop="store.changeThemeType">
               <i
                 :class="`iconfont icon-${themeType === 'auto' ? 'dark' : themeType === 'dark' ? 'light' : 'auto'}`"
               />
