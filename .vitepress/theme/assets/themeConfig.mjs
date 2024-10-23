@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "Dale Chu",
-      cover: "/images/logo/avatar.webp",
+      cover: "/images/logo/avatar.webp", // siteMeta.author.cover
       email: "2448926122@qq.com",
       link: "https://dalechu.cn",
     },
@@ -153,7 +153,7 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/avatar.webp",
+          icon: "/images/logo/emoji.png",
           name: "源站",
           url: "https://www.dalechu.cn/",
         },
@@ -226,7 +226,7 @@ export const themeConfig = {
     // sitemap
     sitemap: [
       {
-        text: "博客",
+        text: "帖子",
         items: [
           // { text: "近期文章", link: "/" },
           { text: "全部分类", link: "/pages/categories" },
@@ -252,20 +252,20 @@ export const themeConfig = {
       //   ],
       // },
       {
-        text: "页面",
+        text: "部署",
         items: [
-          { text: "畅所欲言", link: "/pages/message" },
+          { text: "项目仓库", link: "https://github.com/Daleveral/docs", newTab: true },
           { text: "关于本站", link: "/pages/about" },
           // { text: "隐私政策", link: "/pages/privacy" },
           // { text: "版权协议", link: "/pages/cc" },
         ],
       },
       {
-        text: "服务",
+        text: "订阅",
         items: [
           // { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
-          { text: "一个导航", link: "https://start.dalechu.cn", newTab: true },
-          { text: "站点订阅", link: "https://dalechu.cn/rss.xml", newTab: true },
+          { text: "本站", link: "https://docs.dalechu.cn/rss.xml", newTab: true },
+          { text: "博客", link: "https://www.dalechu.cn/rss/feed.xml", newTab: true },
           // {
           //   text: "反馈投诉",
           //   link: "https://eqnxweimkr5.feishu.cn/share/base/form/shrcnCXCPmxCKKJYI3RKUfefJre",

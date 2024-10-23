@@ -17,7 +17,7 @@
         <i :class="`iconfont icon-${item.icon}`"></i>
       </a>
       <div class="logo" title="返回顶部" @click="smoothScrolling">
-        <img :src="siteMeta.author.cover" alt="author" class="author" />
+        <img :src="/images/logo/up.png" alt="author" class="author" />
       </div>
       <a
         v-for="(item, index) in socialLinkData.second"
