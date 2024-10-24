@@ -150,7 +150,7 @@
   <body>
     <header>
       <div class="logo"> 
-        <img src="./images/logo/jump.gif" alt="" />
+        <img src="./images/logo/ld.gif" alt="" />
       </div>
       <div class="title">
         <span class="site-name">Dale's Docs</span>
@@ -158,7 +158,7 @@
       </div>
     </header>
     <main>
-      <span class="tip">您即将离开 Dale's Docs, 前往</span>
+      <span class="tip">正在跳转至</span>
       <span id="url"></span>
       <div id="jump-content" class="warn">
         <span id="site-info">⚠️ 该网址安全性未知，请注意您的帐号和财产安全</span>
@@ -195,13 +195,21 @@
         "*.dev",
         "*.xyz",
         "*.org",
+        "youtu.be",
         "*.us",
+        "*.me",
+        "*.ai",
+        "*.cc",
+        "*.tv",
+        "*.icu",
+        "*.vip",
+        "*.info",
       ];
       // 网址黑名单
       const blacklist = ["*.taobao.com", "*.jd.com"];
       // 提示文本
       const tipText = {
-        safe: "✅ 该网址为信任网址，即将跳转",
+        safe: "✅ 正在跳转中",
         danger: "⛔ 该网址处于黑名单",
       };
       // 自动跳转

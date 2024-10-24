@@ -359,7 +359,7 @@ export const themeConfig = {
     // 微信二维码
     wechat: "https://picscdn.dalechu.cn/wx_ds.png",
     // 支付宝二维码
-    alipay: "https://picscdn.dalechu.cn/zfb_ds.png",
+    alipay: "https://picscdn.dalechu.cn/zfbzf_dale.png",
   },
   // 图片灯箱
   fancybox: {
