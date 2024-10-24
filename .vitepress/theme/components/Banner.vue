@@ -3,9 +3,12 @@
     <h1 class="title">{{ theme.siteMeta.title }}</h1>
     <div class="subtitle">
       <Transition name="fade" mode="out-in">
-        <span :key="hitokotoData?.hitokoto" class="text">
+        <!-- <span :key="hitokotoData?.hitokoto" class="text">
           {{ hitokotoData?.hitokoto ? hitokotoData?.hitokoto : theme.siteMeta.description }}
-        </span>
+        </span> -->
+        <div id="typewriter" class="typewriter" style="text-align: center;">
+          mankind, alive, hungry & foolish
+        </div>
       </Transition>
     </div>
     <Transition name="fade" mode="out-in">
@@ -127,6 +130,44 @@ onMounted(() => {
 onBeforeUnmount(() => {
   clearTimeout(hitokotoTimeOut.value);
 });
+
+
+
+function typeWriter() {
+  // 从div元素中获取要显示的文本
+  var text = document.getElementById("typewriter").innerText;
+  // 当前字符的位置
+  var i = 0;
+  // 每个字符的显示速度（毫秒）
+  var speed = 100;
+
+  function typeNextChar() {
+    if (i < text.length) {
+      // 获取typewriter元素
+      var elem = document.getElementById("typewriter");
+      // 设置元素的文本为当前已打印的文本
+      elem.innerText = text.substring(0, i + 1);
+      // 移动到下一个字符
+      i++;
+      // 使用setTimeout递归调用typeNextChar函数
+      setTimeout(typeNextChar, speed);
+    }
+  }
+
+  // 清空div中的文本，准备开始打字效果
+  document.getElementById("typewriter").innerText = '';
+  // 开始打字效果
+  typeNextChar();
+}
+
+// 当页面加载完毕时，开始打字效果
+window.onload = function() {
+  typeWriter();
+};
+
+
+
+
 </script>
 
 <style lang="scss" scoped>

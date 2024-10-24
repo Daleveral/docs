@@ -96,12 +96,12 @@
             <span class="info-num" style="--color: #43a6c6">2003</span>
           </div>
           <div class="info-item">
-            <span class="info-name">职业</span>
-            <span class="info-num" style="--color: #dfac46">学生</span>
+            <span class="info-name">来自</span>
+            <span class="info-num" style="--color: #dfac46">安徽安庆</span>
           </div>
           <div class="info-item">
-            <span class="info-name">专业</span>
-            <span class="info-num" style="--color: #d8b4fe">网安</span>
+            <span class="info-name">职业</span>
+            <span class="info-num" style="--color: #d8b4fe">学生</span>
           </div>
           <!-- <div class="info-item">
             <span class="info-name">理想</span>

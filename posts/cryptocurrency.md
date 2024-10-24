@@ -4,13 +4,18 @@ tags: [区块链, 密码学]
 categories: [密码学]
 date: 2024-10-11
 description: 向河梁, 回头万里, 故人长绝. 易水萧萧西风冷, 满座衣冠似雪
-
+references:
+  - title: 李永乐老师讲比特币 (1)
+    url: https://youtu.be/g_fSistU3MQ
+references:
+  - title: 李永乐老师讲比特币 (2)
+    url: https://youtu.be/pbAVauYsqP0
 ---
 
 <br/>
 
 ::: info Blockchain & Bitcoin
-2008 年, 中本聪 ( Satoshi Nakamoto ) 发布白皮书, 区块链概念和比特币问世
+2008 年, 中本聪 ( Satoshi Nakamoto ) 发布 [白皮书](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf), 区块链和比特币问世
 :::
 <br/>
 
@@ -62,8 +67,11 @@ description: 向河梁, 回头万里, 故人长绝. 易水萧萧西风冷, 满�
 <br/>
 
 ## 比特币的金融特征
-- 高波动高收益
+- 没有中心发行机构, 不必担心主权危机
+- 天生具有防伪属性, 任何交易可追溯
+- 交易只需要公钥和地址, 完全匿名
 - 存量有限, 有一定保值性
+- 投资比特币 : 高风险高波动高收益
 - 回归相关性几乎为零
 - 萨尔瓦多、古巴、中非和多米尼克已经将比特币纳为法币
 - 目前 90% 的比特币已被开采

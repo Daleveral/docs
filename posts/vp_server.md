@@ -4,7 +4,11 @@ tags: [Linux, 建站]
 categories: [服务器]
 date: 2024-10-24
 description: 鸢飞戾天，鱼跃于渊. 岂弟君子，遐不作人
-
+references:
+  - title: 部署 VitePress 站点 ( vitepress.dev )
+    url: https://vitepress.dev/zh/guide/deploy#nginx
+  - title: 基于vitepress搭建静态博客 ( llp-blog )
+    url: https://blog.llinp.cn/article/hello.html
 ---
 
 <br/>
@@ -32,6 +36,8 @@ pnpm install
 
 pnpm build  # alias pb in my ~/.zshrc
 ```
+
+<br/>
 
 等待 **~/docs/.vitepress/** 下生成存储静态网页的目录 **/dist**
 
@@ -88,6 +94,8 @@ cp -r ~/docs/.vitepress/dist/* /usr/share/nginx/html/dist
 ```
 
 <br/>
+
+重启 Nginx
 
 ```shell
 nginx -t
