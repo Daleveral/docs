@@ -228,7 +228,7 @@ export const getGreetings = () => {
     hello = "上午好，今天也要加油哦！";
   } else if (hour < 14) {
     hello = "中午好，吃饱了精神好！";
-  } else if (hour < 17) {
+  } else if (hour < 18) {
     hello = "下午好，继续加油！";
   } else if (hour < 19) {
     hello = "傍晚了，该放松一下了！";

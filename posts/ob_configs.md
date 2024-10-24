@@ -10,7 +10,7 @@ description: 午梦千山, 窗阴一箭, 隔江人在雨声中, 晚风菰叶生�
 
 
 ## 快捷键
-___
+可以在设置里自定义 :
 -  Ctrl + 数字 = 标题
 -  Ctrl Shift K = 代码
 -  Alt Q = 引用
@@ -20,7 +20,6 @@ ___
 
 
 ## 外观
-___
 -  字体使用 [霞鹜文楷](https://github.com/lxgw/LxgwWenKai) 
 -  下载插件 [style settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin)
 -  使用 [Blue Topaz 主题](https://github.com/PKM-er/Blue-Topaz_Obsidian-css?tab=readme-ov-file) 
@@ -42,12 +41,13 @@ git branch -M main
 git remote add origin https://github.com/Daleveral/obsidians.git
 git push -u origin main
 
-# 若 git init 后是 master 分支, 删除 .git 文件夹再执行 : git config --global init.defaultBranch main
+# 若 git init 后是 master 分支, 删除 .git 目录后执行 : 
+# git config --global init.defaultBranch main
 ```
 <br/>
 
 
-编写脚本, 保存为 sync.ps1 :
+编写 PowerShell 脚本, 保存为 sync.ps1 :
 
 ```shell
 $commitMessage = Read-Host "commit message ~"
@@ -65,10 +65,9 @@ git push origin main
 ```shell
 # 若有 commit 冲突, 可覆盖远程仓库强制 push : 
 git push --force origin main
+```
 
-# 新设备获取笔记文件 : 
-git clone git@github.com:Daleveral/obsidians.git
-
+```shell
 # 移动设备在 termux 中可设置软链接 :
 mv obsidians /storage/emulated/0/
 ln -s /storage/emulated/0/obsidians obsidians
@@ -77,7 +76,7 @@ git config --global --add safe.directory /storage/emulated/0/obsidians
 
 <br/>
 
-移动设备拉取远程仓库, 使用脚本 :
+移动设备拉取远程仓库, 可使用脚本 :
 
 ```shell
 cd ./obsidians

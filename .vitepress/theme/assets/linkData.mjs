@@ -4,7 +4,7 @@ const linkData = [
   {
     type: "rec",
     typeName: "列表",
-    typeDesc: "一起阅读，一起进步",
+    typeDesc: "一起阅读，一起进步", 
     typeList: [
       {
         name: "阮一峰",
@@ -49,16 +49,28 @@ const linkData = [
         url: "https://diygod.cc/",
       },
       {
-        name: "XAOXUU",
-        avatar: "https://pic.imgdb.cn/item/67186cd0d29ded1a8c5f4aff.jpg",
-        desc: "风暴前夕",
-        url: "https://xaoxuu.com/",
-      },
-      {
         name: "無名小栈",
         avatar: "https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png",
         desc: "分享技术与科技生活",
         url: "https://blog.imsyy.top/",
+      },
+      {
+        name: "PeterJXL",
+        avatar: "https://image.peterjxl.com/blog/re0.jpg",
+        desc: "从 01 开始",
+        url: "https://www.peterjxl.com/",
+      },
+      {
+        name: "安知鱼",
+        avatar: "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
+        desc: "生活明朗, 万物可爱",
+        url: "https://blog.anheyu.com/",
+      },
+      {
+        name: "Obaby Chong",
+        avatar: "https://pic.imgdb.cn/item/671a53dfd29ded1a8c24b641.jpg",
+        desc: "逆向分析工程师, 非专业 APP 开发者",
+        url: "https://h4ck.org.cn/whoami",
       },
       {
         name: "Dale",

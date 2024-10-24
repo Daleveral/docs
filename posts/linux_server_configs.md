@@ -12,15 +12,21 @@ description: 沉重的影子像道路，穿过整个国土
 ## 更改主机名
 ```shell
 hostnamectl set-hostname dales
-vim /etc/hosts # 127.0.0.1 后面的字符改成主机名
-# 重启
+vim /etc/hosts # 127.0.0.1 后面的字符改成新主机名
+# 重启服务器
 ```
 <br/>
 
 
 ## 安装必要软件
 ```shell
-apt install git nginx neofetch zsh unzip
+# 以 Debian 为例
+apt update
+apt upgrade
+apt install git nginx neofetch zsh unzip micro btop
+
+# 更多 :
+# node.js, python, docker, 1panel ... 
 ```
 
 <br/>
@@ -30,20 +36,20 @@ apt install git nginx neofetch zsh unzip
 ```shell
 chsh -s /bin/zsh
 
-# git 方式
+# 安装两个插件, 自动补全和语法高亮, 可通过 github, gitee, scp 多种方式进行 :
+# GitHub
 cd ~/.oh-my-zsh/plugins/
 git clone https://github.com/zsh-users/zsh-autosuggestions.git 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
 
-# gitee 方式
+# Gitee
 cd ~/.oh-my-zsh/plugins/
 git clone https://gitee.com/dale-chu/zsh-autosuggestions.git 
 git clone https://gitee.com/dale-chu/zsh-syntax-highlighting-master.git 
 
-# git 本地再 scp 
-cd C:/Users/24489/Desktop/Temp/Linux-configs
-scp -r .\zsh-autosuggestions\ aly:~/.oh-my-zsh/plugins/
-scp -r .\zsh-syntax-highlighting\ aly:~/.oh-my-zsh/plugins/
+#  scp ( dales 代指 .ssh/config 中服务器名称 )
+scp -r .\zsh-autosuggestions\ dales:~/.oh-my-zsh/plugins/
+scp -r .\zsh-syntax-highlighting\ dales:~/.oh-my-zsh/plugins/
 
 
 vim ~/.zshrc
@@ -53,12 +59,14 @@ plugins=(git
         zsh-syntax-highlighting
         )
 
-# 主题改为 sorin, af-magic, agnoster ...
+# 主题可改为 sorin, af-magic, agnoster ...
+
+source ~/.zshrc
 ```
 
 <br/>
 
-## .zshrc 配置
+## 更多 .zshrc 配置
 
 参考 [终端配置](/posts/terminal_configs)
 
