@@ -161,11 +161,15 @@ function typeWriter() {
 }
 
 // 当页面加载完毕时，开始打字效果
-window.onload = function() {
-  typeWriter();
-};
+// window.onload = function() {
+//   typeWriter();
+// };
 
+// 当文档加载完毕时触发打字效果
+document.addEventListener('DOMContentLoaded', typeWriter);
 
+// 当浏览器历史记录发生变化时触发打字效果
+// window.addEventListener('popstate', typeWriter);
 
 
 </script>
