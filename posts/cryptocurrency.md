@@ -7,7 +7,6 @@ description: 向河梁, 回头万里, 故人长绝. 易水萧萧西风冷, 满�
 references:
   - title: 李永乐老师讲比特币 (1)
     url: https://youtu.be/g_fSistU3MQ
-references:
   - title: 李永乐老师讲比特币 (2)
     url: https://youtu.be/pbAVauYsqP0
 ---
