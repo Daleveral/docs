@@ -7,7 +7,7 @@
           {{ hitokotoData?.hitokoto ? hitokotoData?.hitokoto : theme.siteMeta.description }}
         </span> -->
         <div id="typewriter" class="typewriter" style="text-align: center;">
-          mankind, alive, hungry & foolish
+          mankind, alive, hungry & foolish...
         </div>
       </Transition>
     </div>
@@ -139,7 +139,7 @@ function typeWriter() {
   // 当前字符的位置
   var i = 0;
   // 每个字符的显示速度（毫秒）
-  var speed = 100;
+  var speed = 176;
 
   function typeNextChar() {
     if (i < text.length) {

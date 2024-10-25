@@ -56,7 +56,7 @@ const linkData = [
       },
       {
         name: "PeterJXL",
-        avatar: "https://image.peterjxl.com/blog/re0.jpg",
+        avatar: "https://pic.imgdb.cn/item/671a56d2d29ded1a8c276f81.jpg",
         desc: "从 01 开始",
         url: "https://www.peterjxl.com/",
       },
