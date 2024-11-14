@@ -16,11 +16,14 @@ references:
 ## 基本环境
 
 - node.js v18 及以上版本
-- pnpm ( 可选, 以下基于 pnpm )
+- pnpm ( 以下基于 pnpm )
+- Debian 下最新版本 node.js 的安装参考 [Linux 新服务器配置](https://docs.dalechu.cn/posts/linux_server_configs)
 
 <br/>
 
 ```shell
+cd ~
+
 pnpm add -D vitepress
 ```
 
@@ -32,6 +35,8 @@ pnpm add -D vitepress
 ```shell
 git clone https://github.com/Daleveral/docs.git  
 
+cd docs
+
 pnpm install
 
 pnpm build  # alias pb in my ~/.zshrc
@@ -42,27 +47,34 @@ pnpm build  # alias pb in my ~/.zshrc
 等待 **~/docs/.vitepress/** 下生成存储静态网页的目录 **/dist**
 
 ```shell
-cp -r ~/docs/.vitepress/dist/* /usr/share/nginx/html/dist
+mkdir /usr/share/nginx/html/dist
+
+cp -r .vitepress/dist/* /usr/share/nginx/html/dist
+
+ls /usr/share/nginx/html/dist
 ```
 
 <br/>
 
 ## Nginx 配置
+
+::: details https 443 端口 + 自定义域名
+
+
 ```shell
     server # notes  -->  https
     {
         listen 80;
-        server_name notes.dalechu.cn;
+        server_name notes.dalechu.cn; # 使用自定义域名 !
         return 301 https://$server_name$request_uri;
     }
-
 
     server # notes  -->  /usr/share/nginx/html/dist
     {
         gzip on;
         gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
-        server_name notes.dalechu.cn;
+        server_name notes.dalechu.cn; # 使用自定义域名 !
         listen 443 ssl http2;
 
         ssl_stapling on;
@@ -92,6 +104,48 @@ cp -r ~/docs/.vitepress/dist/* /usr/share/nginx/html/dist
         }
     }
 ```
+
+:::
+
+<br/>
+
+::: details http ip + 自定义端口访问
+
+``` shell
+    server {
+        gzip on;
+        gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+        listen 2017;
+        server_name _;
+        # index index.html;
+
+        location / {
+            # content location
+            root /usr/share/nginx/html/dist;
+
+            # exact matches -> reverse clean urls -> folders -> not found
+            try_files $uri $uri.html $uri/ =404;
+
+            # non existent pages
+            error_page 404 /404.html;
+
+            # a folder without index.html raises 403 in this setup
+            error_page 403 /404.html;
+
+            # adjust caching headers
+            # files in the assets folder have hashes filenames
+            location ~* ^/assets/ {
+                expires 1y;
+                add_header Cache-Control "public, immutable";
+            }
+        }
+    }
+```
+
+:::
+
+
 
 <br/>
 

@@ -53,7 +53,7 @@ Host nickname # 连接服务器用自定义的 nickname 就行了
     TCPKeepAlive yes
     
 # 传送公钥 
-type key_name.pub | ssh user_name@8.8.8.8 "cat >> ~/.ssh/authorized_keys"
+type key_name.pub | ssh root@8.8.8.8 "cat >> ~/.ssh/authorized_keys"
 ```
 
 <br/>

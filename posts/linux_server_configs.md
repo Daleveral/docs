@@ -17,59 +17,79 @@ vim /etc/hosts # 127.0.0.1 后面的字符改成新主机名
 ```
 <br/>
 
+## 换源
+
+```shell
+vim /etc/apt/sources.list 
+```
+
+```shell
+deb http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb http://mirrors.aliyun.com/debian-security buster/updates main
+deb-src http://mirrors.aliyun.com/debian-security buster/updates main
+deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+```
+
+```shell
+apt update
+```
+
+
+<br/>
+
 
 ## 安装必要软件
 ```shell
 # 以 Debian 为例
 apt update
 apt upgrade
-apt install git nginx neofetch zsh unzip micro btop
+apt install fish
+fish
+cd .config/fish
+vim config.fish
+# 重启 fish
 
-# 更多 :
-# node.js, python, docker, 1panel ... 
+# 安装 : git nginx neofetch unzip micro btop python ...
 ```
 
 <br/>
 
+## 安装 node.js 最新版本
 
-## zsh 配置
 ```shell
-chsh -s /bin/zsh
-
-# 安装两个插件, 自动补全和语法高亮, 可通过 github, gitee, scp 多种方式进行 :
-# GitHub
-cd ~/.oh-my-zsh/plugins/
-git clone https://github.com/zsh-users/zsh-autosuggestions.git 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
-
-# Gitee
-cd ~/.oh-my-zsh/plugins/
-git clone https://gitee.com/dale-chu/zsh-autosuggestions.git 
-git clone https://gitee.com/dale-chu/zsh-syntax-highlighting-master.git 
-
-#  scp ( dales 代指 .ssh/config 中服务器名称 )
-scp -r .\zsh-autosuggestions\ dales:~/.oh-my-zsh/plugins/
-scp -r .\zsh-syntax-highlighting\ dales:~/.oh-my-zsh/plugins/
-
-
-vim ~/.zshrc
-# 添加以下内容 : 
-plugins=(git
-        zsh-autosuggestions
-        zsh-syntax-highlighting
-        )
-
-# 主题可改为 sorin, af-magic, agnoster ...
-
-source ~/.zshrc
+apt update 
+```
+```shell
+apt upgrade 
 ```
 
-<br/>
+```shell
+apt install -y ca-certificates curl gnupg
+```
+```
+mkdir -p /etc/apt/keyrings
+```
+```
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+```
+```
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_21.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+```
+```
+apt update
+```
+```
+apt install nodejs -y
+```
+```
+npm config set registry https://registry.npmmirror.com
+```
+```
+npm install --global pnpm
+```
 
-## 更多 .zshrc 配置
 
-参考 [终端配置](/posts/terminal_configs)
-
-
-<br/>
-<br/>
