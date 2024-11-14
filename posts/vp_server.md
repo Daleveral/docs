@@ -7,8 +7,10 @@ description: 鸢飞戾天，鱼跃于渊. 岂弟君子，遐不作人
 references:
   - title: 部署 VitePress 站点 ( vitepress.dev )
     url: https://vitepress.dev/zh/guide/deploy#nginx
-  - title: 基于 vitepress 搭建静态博客 ( llp-blog )
+  - title: 基于 VitePress 搭建静态博客 ( llp-blog )
     url: https://blog.llinp.cn/article/hello.html
+  - title: Ubuntu 安装 Node.js 的方法
+    url: https://juejin.cn/post/7361323894449946662
 ---
 
 <br/>
@@ -39,7 +41,7 @@ cd docs
 
 pnpm install
 
-pnpm build  # alias pb in my ~/.zshrc
+pnpm build  
 ```
 
 <br/>
@@ -157,6 +159,7 @@ ls /usr/share/nginx/html/dist
 
 ```shell
 nginx -t
+
 nginx -s reload
 ```
 

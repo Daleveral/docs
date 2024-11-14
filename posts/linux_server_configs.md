@@ -4,7 +4,9 @@ tags: [Linux, 服务器]
 categories: [服务器]
 date: 2024-10-11
 description: 沉重的影子像道路，穿过整个国土
-
+references:
+  - title: Ubuntu 安装 Node.js 的方法
+    url: https://juejin.cn/post/7361323894449946662
 ---
 
 
@@ -47,6 +49,7 @@ apt update
 ## 使用 fish 终端
 ```shell
 # 以 Debian 为例
+
 apt update
 
 apt upgrade
@@ -111,10 +114,26 @@ npm install --global pnpm
 
 <br/>
 
-## 更多软件 
-- git nginx neofetch unzip micro btop python 
+## 安装 docker
+```shell
+apt install -y docker.io docker-compose jq
+
+vim /etc/docker/daemon.json
+# 使用可用镜像源
+
+docker -v
+```
+
+<br/>
+
+## 更多
+- 必装 : **git nginx neofetch unzip micro btop python**
+
+- [Linux 服务器免密登录](https://docs.dalechu.cn/posts/ssh_configs)
+
 - [V2RayA 使用手册](https://pengtech.net/network/v2rayA_install.html)
-- [VitePress](https://docs.dalechu.cn/posts/vp_server)
+
+- [部署 VitePress 网页 ](https://docs.dalechu.cn/posts/vp_server)
 
 <br/>
 <br/>
