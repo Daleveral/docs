@@ -7,7 +7,7 @@ description: 鸢飞戾天，鱼跃于渊. 岂弟君子，遐不作人
 references:
   - title: 部署 VitePress 站点 ( vitepress.dev )
     url: https://vitepress.dev/zh/guide/deploy#nginx
-  - title: 基于vitepress搭建静态博客 ( llp-blog )
+  - title: 基于 vitepress 搭建静态博客 ( llp-blog )
     url: https://blog.llinp.cn/article/hello.html
 ---
 
@@ -58,10 +58,12 @@ ls /usr/share/nginx/html/dist
 
 ## Nginx 配置
 
-::: details https 443 端口 + 自定义域名
+::: details 点击展开 :  HTTPS 443 端口 + 自定义域名
 
 
 ```shell
+
+
     server # notes  -->  https
     {
         listen 80;
@@ -109,9 +111,11 @@ ls /usr/share/nginx/html/dist
 
 <br/>
 
-::: details http ip + 自定义端口访问
+::: details 点击展开 : HTTP IP 地址 + 自定义端口 
 
 ``` shell
+
+
     server {
         gzip on;
         gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
