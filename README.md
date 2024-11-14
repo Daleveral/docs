@@ -11,6 +11,6 @@ Website: 👻 [Dale's Docs](https://docs.dalechu.cn/)
 
 - 部署 : [服务器部署 VitePress ](https://docs.dalechu.cn/posts/vp_server)
 - 写作格式 : [Curve 主题文档 - 标签格式 ](https://blog.imsyy.top/posts/2024/0307)
-
+- gitee : [docs 镜像](https://gitee.com/dale-chu/docs)
 
 <br/>

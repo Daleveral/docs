@@ -9,7 +9,13 @@ references:
     url: https://juejin.cn/post/7361323894449946662
 ---
 
+<br/>
 
+::: !
+针对 Debian 系统
+:::
+
+<br/>
 
 ## 更改主机名
 ```shell
