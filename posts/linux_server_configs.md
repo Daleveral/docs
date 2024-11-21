@@ -7,12 +7,14 @@ description: 沉重的影子像道路，穿过整个国土
 references:
   - title: Ubuntu 安装 Node.js 的方法
     url: https://juejin.cn/post/7361323894449946662
+  - title : Docker ( Linux 101 )
+    url: https://101.lug.ustc.edu.cn/Ch08/#install-on-linux
 ---
 
 <br/>
 
-::: !
-针对 Debian 系统
+::: tip OS
+以 Debian 系统为例
 :::
 
 <br/>
@@ -121,11 +123,21 @@ npm install --global pnpm
 <br/>
 
 ## 安装 docker
+
+- docker.io 是由 Debian/Ubuntu 维护的 Docker 版本，它比官方的最新版本要老一些. 其依赖的程序库由 Debian/Ubuntu 软件源中的其他软件包提供
+
+- 而 docker-ce 是由 Docker 官方维护的. 它依赖的程序库都被打包在了这个包中
+
+- 两个版本任选其一安装即可, 详情参考 [Linux 101](https://101.lug.ustc.edu.cn/Ch08/#install-on-linux) 或 [Docker — 从入门到实践](https://yeasy.gitbook.io/docker_practice/install/debian)
+
+- 换源参考 : [镜像加速器](https://yeasy.gitbook.io/docker_practice/install/mirror#ubuntu-16.04-debian-8-centos-7)
+
 ```shell
+# 安装 docker.io 
+
 apt install -y docker.io docker-compose jq
 
-vim /etc/docker/daemon.json
-# 使用可用镜像源
+vim /etc/docker/daemon.json  # 换源
 
 docker -v
 ```
@@ -133,7 +145,7 @@ docker -v
 <br/>
 
 ## 更多
-- 必装 : **git nginx neofetch unzip micro btop python**
+- 必装 : **git curl nginx neofetch unzip micro btop python3 python3-pip fd-find**
 
 - [Linux 服务器免密登录](https://docs.dalechu.cn/posts/ssh_configs)
 
