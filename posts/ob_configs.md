@@ -30,15 +30,22 @@ description: 午梦千山, 窗阴一箭, 隔江人在雨声中, 晚风菰叶生�
 
 ## 同步
 ___
-基于github 的 git同步方式 ( 前提 : 在所有设备上配制好 git , 密钥对和代理等 ) :
+
+基于 github 远程仓库进行同步 ( 前提 : 在所有设备上配制好 git , 密钥对和代理等 ) :
 
 ```shell
+# 对本地 obsidian vault git 化
 # 在 github 上创建仓库 obsidians, 终端切到笔记目录下, 执行 :
 git init
+
 git add .
+
 git commit -m "first commit"
+
 git branch -M main
+
 git remote add origin https://github.com/Daleveral/obsidians.git
+
 git push -u origin main
 
 # 若 git init 后是 master 分支, 删除 .git 目录后执行 : 
@@ -47,7 +54,7 @@ git push -u origin main
 <br/>
 
 
-编写 PowerShell 脚本, 保存为 sync.ps1 :
+简单的 PowerShell 脚本 sync.ps1 , 将本地更改提交到远程 :
 
 ```shell
 $commitMessage = Read-Host "commit message ~"
@@ -60,19 +67,31 @@ git push origin main
 <br/>
 
 
-更多 :
 
 ```shell
 # 若有 commit 冲突, 可覆盖远程仓库强制 push : 
 git push --force origin main
 ```
 
+<br/>
+
+
+对于安卓设备, 可以在 termux 命令行中配置 git 环境 :
+
 ```shell
-# 移动设备在 termux 中可设置软链接 :
-mv obsidians /storage/emulated/0/
-ln -s /storage/emulated/0/obsidians obsidians
-git config --global --add safe.directory /storage/emulated/0/obsidians  
+# 先配制好 GitHub 公私钥
+cd /storage/emulated/0
+
+git clone git@github.com:yourname/yourrepo.git
+
+cd ~
+
+# 配置软链接
+ln -s /storage/emulated/0/yourrepo yourrepo
+
+git config --global --add safe.directory /storage/emulated/0/yourrepo
 ```
+
 
 <br/>
 
@@ -86,5 +105,6 @@ git pull origin main
 
 
 <br/>
-<br/>
+
+___
 

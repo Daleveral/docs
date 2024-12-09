@@ -14,6 +14,7 @@ description: 乘风好去, 长空万里, 直下看山河. 斫去桂婆娑. 人�
 
 ```shell
 vim /etc/ssh/sshd_config
+# termux 环境为 /usr/etc/ssh/sshd_config
 
 # 是否允许 root 远程登录
 PermitRootLogin yes
